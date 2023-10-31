@@ -20,8 +20,5 @@ onMounted(async () => {
    axiosClient.get(`random.php`).then(({data}) => meals.value.push(data.meals[0]))
  }
 
- /* const response = await axiosClient.get("/list.php?i=list");
-
-  ingredient.value = response.data;*/
 });
 </script>
